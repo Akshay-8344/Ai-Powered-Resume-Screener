@@ -34,8 +34,8 @@ class ResumeSerializer(serializers.ModelSerializer):
 
 
 class ScreenerSerializer(serializers.ModelSerializer):
-    Job = JobSerializer()
-    Resume = ResumeSerializer()
+    job = JobSerializer()
+    resume = ResumeSerializer()
     class Meta:
         model = Screening
         fields = '__all__'
